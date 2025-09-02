@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111;
+}
+
+.Background-video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 95%;
+  object-fit: cover;
+}
+/* designing navbar */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: #222;
+  color: white;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.logo-img p {
+  font-family: "Dancing Script", cursive;
+  text-transform: capitalize;
+}
+
+#project-button {
+  margin-left: 850px;
+}
+
+#project-resume {
+  margin-left: 20px;
+}
+
+#project-achivement {
+  margin-left: 20px;
+}
+
+#munu-button {
+  margin-left: 250px;
+}
+
+.projects1 button {
+  height: 28px;
+  width: 90px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  background-color: #222;
+  color: white;
+  border: 0.1px solid;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-section label {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 59px;
+  right: -350px;
+  width: 250px;
+  height: calc(100% - 60px);
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  margin: 0 0 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 15px;
+  border-bottom: 1px solid #333;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.list1 {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar ul li i {
+  margin-right: 8px;
+}
+
+#menu-toggle:checked ~ .sidebar {
+  right: 0;
+}
+
+.sidebar label {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* hero page */
+
+.hero-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* page 1 edeting form hear */
+
+.profile-andAll {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  /* width: 600px; */
+  margin-top: 100px;
+  width: 45%;
+}
+
+.image-section {
+  width: 300px;
+  height: 300px;
+}
+.image-section img {
+  border-radius: 50%;
+  width: 100%;
+  border: 3px solid #fff; /* Border add kiya */
+  transition: all 0.3s ease-in-out; /* Smooth hover animation */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* halka shadow */
+}
+
+.image-section img:hover {
+  transform: scale(1.1); /* Hover pe thoda bada hoga (zoom-out effect) */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* zyada shadow -> 3D look */
+  border: 5px solid #4caf50; /* hover pe border color change (optional) */
+}
+
+.profile-andAll h2 {
+  text-transform: capitalize;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+
+.profile-andAll h3 {
+  font-size: larger;
+  text-transform: capitalize;
+}
+
+/* social media section edeting */
+.social-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 330px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border: 0.01px solid white;
+  border-radius: 10px;
+}
+.social-media {
+  font-size: 40px;
+  color: white;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* starting edeting page 2 right side  */
+
+.about-section {
+  width: 55%;
+  margin-top: 160px;
+  color: white;
+}
+
+.about-section h2 {
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+
+.about-me {
+  font-size: 3vh;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.button-aboutMe {
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 30px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid black;
+  box-shadow: 0, 4px, 8px, rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.button-aboutMe p {
+  font-size: medium;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+
+/* edeting for intrust ans study points */
+
+.foverate-section {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.intrust ul {
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.intrust li {
+  margin-top: 5px;
+}
+
+.collage-info {
+  display: flex;
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.school-info {
+  display: flex;
+}
+
+/* project work started hear */
+
+.projects {
+  margin-top: 200px;
+  display: flex;
+  color: #ffffff;
+  text-align: center;
+  flex-direction: column;
+}
+
+.projects h1 {
+  text-transform: capitalize;
+  font-size: xxx-large;
+}
+
+.card-space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.web1 {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 400px; /* Fixed width but chhoti */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.web1:hover {
+  transform: scale(1.07) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 12px 24px rgba(209, 209, 209, 0.3);
+}
+
+.web1 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Image ko stretch hone se bachata hai */
+}
+
+.web1 h3 {
+  margin: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.web1 p {
+  margin: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* creating invetation */
+
+.project-inv {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside-box {
+  background-color: #047857;
+  height: 400px;
+  width: 630px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+.inside-box h1 {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+
+.inside-box h2 {
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: x-large;
+  text-transform: capitalize;
+}
+
+.inside-box p {
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inside-box h5 {
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: large;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.info-button-contect {
+  margin-top: 25px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 260px;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-button-contect a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 900;
+}
+
+/* award section  */
+
+.awards-section-bar {
+  height: 600px;
+  color: #ffffff;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.card-sections-for-achivement {
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  margin-top: 30px;
+}
+.cards {
+  background-color: #111;
+  border-radius: 12px;
+  width: 410px; /* Fixed width but chhoti */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.cards:hover {
+  transform: scale(1.03) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 12px 24px rgba(209, 209, 209, 0.3);
+}
+
+.cards img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Image ko stretch hone se bachata hai */
+}
+
+/* experiment section */
+
+.experience-section {
+  max-width: 900px; /* Page ka max width */
+  margin: auto; /* Center align */
+  padding: 40px 20px; /* Spacing andar se */
+  color: white;
+  font-size: large;
+}
+
+/* Section Title */
+.experience-section h2 {
+  text-align: center; /* Heading center me */
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+/* Timeline main line */
+.timeline {
+  position: relative;
+  margin-left: 40px; /* Thoda space left side se */
+  border-left: 2px solid #fff; /* Vertical line */
+}
+
+/* Each experience box */
+.timeline-item {
+  margin-bottom: 40px; /* Alag alag ke beech gap */
+  padding-left: 30px; /* Text thoda andar shift */
+  position: relative;
+}
+
+/* Icon for each item */
+.timeline-item::before {
+  content: "💼"; /* Default briefcase icon */
+  position: absolute;
+  left: -23px; /* Line ke upar sahi jagah pe */
+  top: 0;
+  background: #0ef; /* Icon background color */
+  color: #111; /* Icon ka color */
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 50%; /* Circle banane ke liye */
+  border: 2px solid #111; /* Border black */
+}
+
+/* Job Title */
+.timeline-item h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #0ef; /* Highlighted title */
+}
+
+/* Company + Date */
+.timeline-item span {
+  font-size: 14px;
+  color: #aaa;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* List of responsibilities */
+.timeline-item ul {
+  margin: 0;
+  padding-left: 20px; /* List ke bullet thoda andar */
+}
+
+.timeline-item ul li {
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .timeline {
+    margin-left: 20px; /* Mobile pe thoda adjust */
+  }
+  .timeline-item {
+    padding-left: 20px;
+  }
+}
+
+/* creating knowlage circles */
+
+.lanuages {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  text-transform: capitalize;
+}
+
+.lanuages h1 {
+  margin-bottom: 20px;
+}
+
+.lanuage-bars {
+  display: flex;
+  justify-content: center;
+  height: 230px;
+  width: 100%;
+}
+
+.lanuage-circle {
+  border: 20px solid white;
+  margin: 25px;
+  width: 140px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle1 {
+  border: 20px solid green;
+}
+
+.circle2 {
+  border-top: 20px solid green;
+  border-left: 20px solid green;
+  border-right: 20px solid green;
+}
+
+.circle3 {
+  border-top: 20px solid green;
+  border-left: 20px solid green;
+}
+
+.lanuage-circle span {
+  font-size: x-large;
+}
+
+/* research area */
+
+.research-area {
+  color: white;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.writing-area {
+  width: 800px;
+  text-align: center;
+}
+
+.writing-area h1 {
+  font-size: xxx-large;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.writing-area p {
+  font-size: larger;
+  margin: 8px;
+  margin-bottom: 10px;
+}
+.writing-area h3 {
+  font-size: larger;
+}
+
+.writing-area a {
+  text-decoration: none;
+  font-size: x-large;
+  color: #fff;
+}
+
+.footer_background {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 60%;
+  object-fit: cover;
+}
+
+.contact_bar {
+  height: 435px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(2px);
+}
+
+.contact-bar-down {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.social-media-handels {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 250px;
+  color: #ffffff;
+  text-transform: capitalize;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+}
+
+.social-media-handels h1 {
+  margin-bottom: 10px;
+  font-size: x-large;
+}
+
+.insta-gram a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: larger;
+  margin-bottom: 20px;
+}
+
+.stay a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: larger;
+  margin-bottom: 20px;
+}
+
+.copyright1 {
+  color: white;
+}
